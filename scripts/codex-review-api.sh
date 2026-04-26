@@ -23,7 +23,7 @@
 #
 # Env:
 #   OPENAI_API_KEY              required
-#   CODEX_REVIEW_MODEL          default: gpt-5.3-codex
+#   CODEX_REVIEW_MODEL          default: gpt-5.5
 #   CODEX_REVIEW_TIMEOUT        default: 300
 #   CODEX_REVIEW_MAX_ITERATIONS default: 3
 #   CODEX_REVIEW_MAX_TOKENS     default: 30000
@@ -42,7 +42,7 @@ source "$SCRIPT_DIR/lib/lib-content.sh"
 # shellcheck source=lib/lib-codex-exec.sh
 source "$SCRIPT_DIR/lib/lib-codex-exec.sh"
 
-CODEX_REVIEW_MODEL="${CODEX_REVIEW_MODEL:-gpt-5.3-codex}"
+CODEX_REVIEW_MODEL="${CODEX_REVIEW_MODEL:-gpt-5.5}"
 CODEX_REVIEW_TIMEOUT="${CODEX_REVIEW_TIMEOUT:-300}"
 CODEX_REVIEW_MAX_ITERATIONS="${CODEX_REVIEW_MAX_ITERATIONS:-3}"
 CODEX_REVIEW_MAX_TOKENS="${CODEX_REVIEW_MAX_TOKENS:-30000}"

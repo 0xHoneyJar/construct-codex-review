@@ -22,7 +22,7 @@ git clone https://github.com/0xHoneyJar/construct-codex-review.git ~/.claude/con
 
 ## Requirements
 
-- `codex` CLI installed (gpt-5.3-codex backend)
+- `codex` CLI installed (defaults to `gpt-5.5`; override via `CODEX_REVIEW_MODEL`)
 - `OPENAI_API_KEY` in environment
 - `jq`, `bash >= 4`
 
@@ -77,7 +77,7 @@ Environment variables:
 
 | Var | Default | Description |
 |---|---|---|
-| `CODEX_REVIEW_MODEL` | `gpt-5.3-codex` | Model id for codex CLI |
+| `CODEX_REVIEW_MODEL` | `gpt-5.5` | Model id for codex CLI |
 | `CODEX_REVIEW_TIMEOUT` | `300` | Seconds per invocation |
 | `CODEX_REVIEW_MAX_ITERATIONS` | `3` | Iteration cap (auto-approves past this) |
 | `CODEX_REVIEW_MAX_TOKENS` | `30000` | Token budget for prepared content |

@@ -58,7 +58,7 @@ golden_path:
 
 requirements:
   tools:
-    - codex            # codex CLI (gpt-5.3-codex backend)
+    - codex            # codex CLI (gpt-5.5 backend by default; override via CODEX_REVIEW_MODEL)
     - jq
     - bash >= 4
   env:
