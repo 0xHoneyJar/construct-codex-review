@@ -1,8 +1,10 @@
-# construct-codex-review
+# construct-fagan · @FAGAN
 
 > Lean adversarial code review for diffs and implementations. Single GPT pass via codex CLI, structured JSON findings, convergence loop.
 
-A construct in the [Loa Constructs](https://github.com/0xHoneyJar/loa-constructs) ecosystem. Designed to occupy a clean responsibility seam **below** Flatline Protocol: Flatline reviews planning artifacts (PRD/SDD/Sprint), codex-review reviews **code diffs**.
+A construct in the [Loa Constructs](https://github.com/0xHoneyJar/loa-constructs) ecosystem. Designed to occupy a clean responsibility seam **below** Flatline Protocol: Flatline reviews planning artifacts (PRD/SDD/Sprint), FAGAN reviews **code diffs**.
+
+Invoke by embodying the persona — `@FAGAN review this diff` — or via the slash commands below.
 
 ## Quick links
 
@@ -14,16 +16,23 @@ A construct in the [Loa Constructs](https://github.com/0xHoneyJar/loa-constructs
 
 **FAGAN** — after Michael Fagan, who invented formal code inspection at IBM in 1976. Line-anchored. Evidence-based. Provides actual code fixes, not descriptions. Converges toward approval on re-review. Walks the 17 patterns in `resources/patterns.md` against every diff.
 
+## Naming
+
+- **Repo**: `construct-fagan` (renamed 2026-05-04 from `construct-codex-review`; GitHub redirects from old name)
+- **Construct slug**: `fagan` (with legacy alias `codex-review` for back-compat)
+- **Persona handle**: `@FAGAN`
+- **Slash commands**: `/fagan`, `/codex`, `/inspect` (aliases to `/reviewing-diffs`)
+
 ## Install (via constructs-cli)
 
 ```bash
-npx constructs-cli install codex-review
+npx constructs-cli install fagan
 ```
 
 Or directly via git:
 
 ```bash
-git clone https://github.com/0xHoneyJar/construct-codex-review.git ~/.claude/constructs/packs/codex-review
+git clone https://github.com/0xHoneyJar/construct-fagan.git ~/.claude/constructs/packs/fagan
 ```
 
 ## Requirements

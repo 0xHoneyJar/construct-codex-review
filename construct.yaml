@@ -1,15 +1,17 @@
 schema_version: 3
-name: "Codex Review"
-slug: "codex-review"
-version: "0.1.0"
-description: "Lean adversarial code review for diffs and implementations. Single GPT pass via codex CLI, structured JSON findings, convergence loop. Composes with codex-rescue or any implementer for implement+review workflows."
-short_description: "Diff-scoped code review via codex CLI"
+name: "FAGAN"
+slug: "fagan"
+version: "0.2.0"
+description: "FAGAN — strict adversarial code review for diffs and implementations. Named after Michael Fagan (IBM 1976, formal code inspection). Single GPT pass via codex CLI, structured JSON findings, convergence loop. Composes with codex-rescue or any implementer."
+short_description: "FAGAN · diff-scoped code review via codex CLI"
 author: "0xHoneyJar"
 license: "MIT"
 type: "skill-pack"
 visibility: public
 
-repository: https://github.com/0xHoneyJar/construct-codex-review.git
+repository: https://github.com/0xHoneyJar/construct-fagan.git
+aliases:
+  legacy_slug: codex-review   # back-compat for installs that pinned the old slug
 
 skills:
   - slug: reviewing-diffs
