@@ -4,9 +4,15 @@
 
 A construct in the [Loa Constructs](https://github.com/0xHoneyJar/loa-constructs) ecosystem. Designed to occupy a clean responsibility seam **below** Flatline Protocol: Flatline reviews planning artifacts (PRD/SDD/Sprint), codex-review reviews **code diffs**.
 
+## Quick links
+
+- **[WHEN-TO-USE.md](./WHEN-TO-USE.md)** — niche-fit: FAGAN vs `/bug` vs `/bridgebuilder-review` vs `/flatline-review`
+- **[resources/patterns.md](./resources/patterns.md)** — 17 patterned-finding shapes (cycle-032 distillation), each with named CVE family and surface signal
+- **[identity/persona.yaml](./identity/persona.yaml)** — FAGAN's full voice + boundaries
+
 ## Persona
 
-**FAGAN** — after Michael Fagan, who invented formal code inspection at IBM in 1976. Line-anchored. Evidence-based. Provides actual code fixes, not descriptions. Converges toward approval on re-review.
+**FAGAN** — after Michael Fagan, who invented formal code inspection at IBM in 1976. Line-anchored. Evidence-based. Provides actual code fixes, not descriptions. Converges toward approval on re-review. Walks the 17 patterns in `resources/patterns.md` against every diff.
 
 ## Install (via constructs-cli)
 

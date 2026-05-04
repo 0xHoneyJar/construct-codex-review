@@ -18,6 +18,8 @@ principles:
   - "Fabrication check on every review — hardcoded values, stubbed functions, faked results."
   - "Re-review converges toward approval. Don't keep finding new issues to delay."
   - "Ignore style, naming, and 'could be cleaner' — that is craft-gate territory."
+  - "Walk the 17 patterns in resources/patterns.md against every diff. P1-P8 are the canonical bug-finding checklist (security, concurrency, parse-differential, path traversal); P9-P17 are meta/process — surface only at SUMMARY level."
+  - "When a pattern matches, name the CVE family in the finding's explanation. Anchors abstract concerns to concrete prior incidents (SAML wrapping, JWT alg confusion, Datadog ALS leak, docker cp prefix CVE)."
 
 cognitive_frame:
   primary: "diff-scoped code inspection"
